@@ -1,41 +1,106 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab One
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Home10
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-icon slot="icon-only" color="medium" name="ios-help-circle-outline"></ion-icon>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+
+  <!-- Top image -->
+  <div class="courosel">
+    <img src="https://static.vecteezy.com/system/resources/previews/000/094/491/non_2x/polygonal-texture-background-vector.jpg" alt="">
+  </div>
+
+  <!-- Grid menu -->
+  <div class="grid">
+    <div class="row">
+      <div class="item">
+        <img src="../../assets/icon/9.svg" alt="">
+        <h6>Daily</h6>
+      </div>
+      <div class="item">
+          <img src="../../assets/icon/8.svg" alt="">
+          <h6>Vegies</h6>
+      </div>
+      <div class="item">
+          <img src="../../assets/icon/16.svg" alt="">
+          <h6>Meat</h6>
+      </div>
+      <div class="item">
+          <img src="../../assets/icon/14.svg" alt="">
+          <h6>Grocery</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="item">
+          <img src="../../assets/icon/13.svg" alt="">
+          <h6>Medicine</h6>
+      </div>
+      <div class="item-mid">
+        Home 10
+      </div>
+      <div class="item">
+        <img src="../../assets/icon/19.svg" alt="">
+        <h6>Laundry</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="item">
+          <img src="../../assets/icon/18.svg" alt="">
+          <h6>Home Cleaning</h6>
+      </div>
+      <div class="item">
+          <img src="../../assets/icon/12.svg" alt="">
+          <h6>Home Service</h6>
+      </div>
+      <div class="item">
+          <img src="../../assets/icon/3.svg" alt="">
+          <h6>Vehicle Service</h6>
+      </div>
+      <div class="item">
+          <img src="../../assets/icon/6.svg" alt="">
+          <h6>Alcohol and Smoke</h6>
+      </div>
+    </div>
+  </div>
+
+  <!-- Weather -->
+  <div class="weather">
+    <div class="info">
+      <h5>CURRENTLY</h5>
+      <h6>New Delhi, India</h6>
+    </div>
+    <div class="ic">
+      <ion-icon name="md-rainy" class="icon"></ion-icon>
+    </div>
+    <div class="temp">
+      <h2>22</h2>
+      <p> <span>&#176;</span> F</p>
+    </div>
+  </div>
+
+  <!-- Events -->
+  <div class="events">
+    <h6 class="lead">Events Near you <span>View all</span></h6>
+    <div class="event" *ngFor="let i of dummy">
+      <div class="ic">
+          <ion-icon class="icon" name="md-flame"></ion-icon>
+      </div>
+      <div class="info">
+          <h6 class="name">Summer Fest</h6>
+          <h6 class="venue">Magnetic hall, Ring road</h6>
+          <h6 class="time">6:30 PM - 6 April</h6>
+      </div>
+    </div>
+  </div>
+
+
 </ion-content>

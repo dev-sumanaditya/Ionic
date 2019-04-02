@@ -1,4 +1,160 @@
-.welcome-card ion-img {
-  max-height: 35vh;
+.courosel {
+  height: 130px;
   overflow: hidden;
 }
+.courosel img {
+  width: 100%;
+  min-height: 130px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px;
+}
+.grid .row {
+  display: flex;
+}
+.grid .row .item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.grid .row .item img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 5px;
+}
+.grid .row .item h6 {
+  font-size: 10px;
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+  color: rgba(0,0,0,0.8);
+}
+
+.grid .row .item-mid {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+
+.weather {
+  display: flex;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.weather .info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+.weather .info h5 {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+.weather .info h6 {
+  color: #fafafabb;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+.weather .ic {
+  flex: 1;
+  display: flex;
+  padding-right: 40px;
+  align-items: center;
+}
+.weather .ic .icon {
+  font-size: 60px;
+  color: white;
+}
+.weather .temp {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.weather .temp h2 {
+  font-size: 40px;
+  color: #ddd;
+  font-weight: 100;
+  margin: 0;
+}
+.weather .temp p {
+  font-size: 16px;
+  display: flex;
+  color: #ddd;
+  font-weight: 100;
+  margin-top: 0px;
+}
+
+
+
+.events {
+  padding: 20px 10px;
+}
+.events .lead {
+  font-size: 13px;
+  font-weight: 500;
+  color: #414345b6;
+  margin: 0 0 10px 0;
+}
+.events .lead span {
+  font-size: 10px;
+  color: darkblue;
+  margin-right: 5px;
+  margin-top: 5px;
+  font-weight: 600;
+  opacity: 0.9;
+  float: right;
+}
+.events .event {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+.events .event .ic {
+  padding: 5px;
+}
+.events .event .ic .icon {
+  font-size: 40px;
+  color: slateblue;
+}
+.events .event .info {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.events .event .info .name {
+  font-size: 14px;
+  margin: 0 0 2px 0;
+}
+.events .event .info .venue {
+  font-size: 12px;
+  margin: 0;
+  color: rgba(0,0,0,0.8);
+}
+.events .event .info .time {
+  font-size: 12px;
+  margin: 0;
+  color: rgba(0,0,0,0.5);
+}
+
